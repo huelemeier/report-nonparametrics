@@ -18,6 +18,8 @@ library(reportnonparametrics)
 The ```report_nonparametrics()``` is compatible with: 
 ```r 
 chisq.test() # Pearson's chi-squared test
+kruskal.test() # Kruskal-Wallis rank sum test
+friedman.test() # Friedman rank sum test
 ```
 
 
