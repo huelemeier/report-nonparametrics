@@ -20,6 +20,7 @@ The ```report_nonparametrics()``` is compatible with:
 chisq.test() # Pearson's chi-squared test
 kruskal.test() # Kruskal-Wallis rank sum test
 friedman.test() # Friedman rank sum test
+fisher.test() # Fisher's exact test
 ```
 
 
@@ -54,7 +55,11 @@ data <- data.frame(person = rep(1:5, each=4),
                              18, 30, 38, 34, 20, 44, 26, 28, 14, 30))
                              
 report_nonparametrics(friedman.test(data$score, data$drug, data$person))
-A non-parametric Friedman rank sum test among repeated measures of data$score depending on the grouping and block variables data$drug and data$person was conducted. The test rendered a significant Chi-square value suggesting the effect differs between groups (X2(3) = 13.56, p = .004).                              
+A non-parametric Friedman rank sum test among repeated measures of data$score depending on the grouping and block variables data$drug and data$person was conducted. The test rendered a significant Chi-square value suggesting the effect differs between groups (X2(3) = 13.56, p = .004).  
+
+## Fisher's exact test
+report_nonparametrics(fisher.test(table(iris$Sepal.Length, iris$size), alternative = "less"))
+The Fisher's Exact Test for Count Data was applied to determine if there was a significant association between table(iris$Sepal.Length, iris$size). The results suggest the effect is statistically significant, thus confirming a relation between the two variables (p = .000). We applied a one-sided test assuming a negative association. 
                              
                              
 ```
