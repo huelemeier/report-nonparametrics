@@ -1,0 +1,16 @@
+Package: reportnonparametrics
+Type: Package
+Title: Automatic report of findings from various non-parametric tests
+Version: 0.1.0
+Author: Anna Huelemeier 
+Maintainer: Anna Huelemeier <anna@huelemeier.de>
+Description: This function automatically creates reports of different normality tests.
+    These tests are: Pearson's chi-squared test, Kruskal-Wallis rank sum test, Friedman rank sum test and Fisher's exact test
+License: GNU Affero General Public License v3.0
+Encoding: UTF-8
+LazyData: true
+Imports: stats
+Depends: stats
+URL: https://github.com/huelemeier/report-nonparametrics
+BugReports: https://github.com/huelemeier/report-nonparametrics/issues
+RoxygenNote: 7.2.1
