@@ -10,8 +10,10 @@
 #' @return A character vector.
 #'
 #' @import{stats}
+#' @import{stringr}
 #'
 #' library(stats)
+#' library(stringr)
 #' report_nonparametrics(kruskal.test(iris$Petal.Length,iris$Species))
 #' iris$size <- ifelse(iris$Sepal.Length < median(iris$Sepal.Length),"small", "big")
 #' report_non_parametrics(chisq.test(table(iris$Sepal.Length, iris$size))
