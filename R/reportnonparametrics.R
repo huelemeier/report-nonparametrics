@@ -13,7 +13,7 @@
 #' - {cite()}
 #'
 #' @author Anna Huelemeier \email{anna@huelemeier.de}
-#' @import stats
+#' @import stats, stringr
 #'
 #' @name reportnonparametrics
 #'
